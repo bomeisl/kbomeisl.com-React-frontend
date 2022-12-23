@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ProjectCard from './ProjectsCard'
 import projects from './ProjectApi'
-import axios from 'axios'
 
 const Projects = () => {
     const [projectInfo,setProjectInfo] = useState([]);
