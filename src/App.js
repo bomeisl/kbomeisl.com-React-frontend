@@ -3,7 +3,6 @@ import Header from './Header'
 import Projects from './Projects'
 import Skills from './Skills'
 
-import logo from './logo.svg';
 import './App.css';
 
 
