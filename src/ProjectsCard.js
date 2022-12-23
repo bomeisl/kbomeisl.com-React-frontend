@@ -3,9 +3,7 @@ import React from 'react'
 const ProjectCard = (props) => {
     return (
         <div className="green card"> 
-            <div className= "image">
-                <img src = {props.image} alt = "image" />
-            </div>
+    
             <div className="content">
                 <div className="header">
                     {props.name}
