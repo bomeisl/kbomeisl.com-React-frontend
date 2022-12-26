@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL: 'http://kbomeisl.azurewebsites.net/api'
+    baseURL: 'https://kbomeisl.azurewebsites.net/api'
 });

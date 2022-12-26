@@ -2,8 +2,7 @@ import React from 'react'
 
 const ProjectCard = (props) => {
     return (
-        <div className="green card"> 
-    
+        <div className="green card">    
             <div className="content">
                 <div className="header">
                     {props.name}
