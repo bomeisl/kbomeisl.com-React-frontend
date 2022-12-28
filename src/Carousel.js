@@ -50,13 +50,13 @@ const [index, setIndex] = useState(0);
         <Card.Text>
             {pic.sub}
         </Card.Text>
-        <Card.Text>Last updated 3 mins ago</Card.Text>
         </Card.ImgOverlay>
-  </Card>
+    </Card>
    
  
     
     );
+
     return (
       <Carousel responsive={responsive}
       swipeable={true}
