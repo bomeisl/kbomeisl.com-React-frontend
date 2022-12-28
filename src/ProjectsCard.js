@@ -21,6 +21,7 @@ const ProjectCard = (props) => {
                 <Carousel>
                     {reel}
                 </Carousel>
+                
             </div>
             <div className="extra content">
                 <button className="ui button">
