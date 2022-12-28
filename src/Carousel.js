@@ -43,7 +43,7 @@ const [index, setIndex] = useState(0);
 
     const listItems = props.images.map((pic) =>
 
-    <Card className="bg-dark text-white">
+    <Card className="bg-dark text-white" key = {pic.id}>
         <Card.Img src={pic.image} alt="Card image" />
         <Card.ImgOverlay>
         <Card.Title>{pic.header}</Card.Title>
