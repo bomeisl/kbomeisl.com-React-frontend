@@ -26,21 +26,11 @@ const responsive = {
 
 
 function UncontrolledExample(props) {
-const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-  const CustomRightArrow = ({ onClick, ...rest }) => {
-    const {
-      onMove,
-      carouselState: { currentSlide, deviceType }
-    } = rest;
-    // onMove means if dragging or swiping in progress.
-    return <button onClick={() => onClick()} />;
-  };
 
-    const numbers = [1, 2, 3, 4, 5];
+  
+  
+
     const listItems = props.images.map((pic) =>
 
     <Card className="bg-dark text-white">
