@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const ProjectCard = (props) => {
     return (
@@ -15,9 +15,7 @@ const ProjectCard = (props) => {
                 <button className="ui button">
                     {props.github}
                 </button>
-                <button className="ui button">
-                    {props.demo}
-                </button>
+            
             </div>
         </div>
     )

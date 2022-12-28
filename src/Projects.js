@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import ProjectCard from './ProjectsCard'
 import projects from './ProjectApi'
+import UncontrolledExample from './Carousel'
+
+
+
+
 
 const Projects = () => {
     const [projectInfo,setProjectInfo] = useState([]);
@@ -10,7 +14,9 @@ const Projects = () => {
         setProjectInfo(response.data)
     }
 
-    const renderProjectCards = () => {
+
+
+    const renderCarousel = () => {
         return(
             <div className="ui three stackable raised cards">
                 {projectInfo.map(project => {
@@ -20,13 +26,13 @@ const Projects = () => {
 
                     } else {
                         return (
-                            <ProjectCard
-                                name={project.name}
-                                description={project.description}
-                                github={project.github}
-                                demo={project.demo}
-                                key={project.name}
+                            <UncontrolledExample 
+                            key = {project.name}
+                            images = {project.images}
+                            name = {project.name}
+                            description = {project.description}
                             />
+                                
                         )
                     }
                 })}
@@ -34,6 +40,9 @@ const Projects = () => {
             </div>
         )
     }
+      
+        
+      
 
     useEffect(()=>{
         fetchProjects()
@@ -44,7 +53,11 @@ const Projects = () => {
             <div className='ui center aligned container'>
                 <h1>Projects</h1>
             </div>
-            {renderProjectCards()}
+            
+            {renderCarousel()}
+            
+           
+            
         </>
     )
 }
