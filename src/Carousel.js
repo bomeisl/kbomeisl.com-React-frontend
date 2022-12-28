@@ -26,10 +26,20 @@ const responsive = {
 
 
 function UncontrolledExample(props) {
+const [index, setIndex] = useState(0);
 
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+  const CustomRightArrow = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType }
+    } = rest;
+    // onMove means if dragging or swiping in progress.
+    return <button onClick={() => onClick()} />;
+  };
 
-  
-  
 
     const listItems = props.images.map((pic) =>
 
@@ -61,7 +71,7 @@ function UncontrolledExample(props) {
   containerClass="carousel-container"
   dotListClass="custom-dot-list-style"
   itemClass="carousel-item-padding-40-px"
-  
+  CustomRightArrow={<CustomRightArrow/>}
       >
         {listItems}
         
