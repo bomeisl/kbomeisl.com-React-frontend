@@ -1,49 +1,55 @@
 import React from 'react'
 import SkillsList from './SkillsList.js'
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+import { CardGroup } from 'react-bootstrap';
 
 
 const Skills = () => {
 
-    const frontend = ['JavaScript','React/Redux','HTML','CSS','Bootstrap','SemanticUI']
-    const backend = ['Python', 'Django', 'AWS', 'PostgreSQL']
-    const gameDev = ['Unity','Phaser','PyGame']
+    const Web = ['HTML','CSS','JavaScript','Bootstrap', 'SemanticUI']
+    const Android = ['Kotlin', 'Java', 'Compose', "C++"]
+    const Sci = ['Julia','Python','Numpy','Pandas','scikit-learn']
+
+    const Web_inp = Web.map((skill)=> 
+        <ListGroup.Item>{skill}</ListGroup.Item>
+    );
+
+    const Android_inp = Android.map((skill)=> 
+        <ListGroup.Item>{skill}</ListGroup.Item>
+    );
+
+    const Sci_inp = Sci.map((skill)=> 
+        <ListGroup.Item>{skill}</ListGroup.Item>
+    );
 
     return (
-        <>
-            <h1 className="ui center aligned basic segment">Skills</h1>
-            <div className="ui centered raised cards">
-                <div className="red card">
-                    <div className="content">
-                        <div className="center aligned header">
-                            Frontend Tech Stack
-                        </div>
-                        <div className="center aligned">
-                            <SkillsList skills = {frontend}/>
-                        </div>
-                    </div>
-                </div>
-                <div className="blue card">
-                    <div className="content">
-                        <div className="center aligned header">
-                            Backend Tech Stack
-                        </div>
-                        <div className="center aligned">
-                            <SkillsList skills = {backend}/>
-                        </div>
-                    </div>
-                </div>
-                <div className="green card">
-                    <div className="content">
-                        <div className="center aligned header">
-                            Game Development
-                        </div>
-                        <div className="center aligned">
-                            <SkillsList skills = {gameDev}/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
+        <CardGroup>
+             <Card style={{ width: '18rem' }}>
+                <Card.Header>Web Development</Card.Header>
+                <Card.Img variant="top" src="holder.js/100px160" />
+                    <ListGroup variant="flush">
+                        {Web_inp}
+                    </ListGroup>
+            </Card>
+
+            <Card style={{ width: '18rem' }}>
+                <Card.Header>Android Development</Card.Header>
+                <Card.Img variant="top" src="holder.js/100px160" />
+                    <ListGroup variant="flush">
+                        {Android_inp}
+                    </ListGroup>
+            </Card>
+
+            <Card style={{ width: '18rem' }}>
+                <Card.Header>Scientific Computing</Card.Header>
+                <Card.Img variant="top" src="holder.js/100px160" />
+                    <ListGroup variant="flush">
+                        {Sci_inp}
+                    </ListGroup>
+            </Card>
+        </CardGroup>
+            
     )
 }
 
