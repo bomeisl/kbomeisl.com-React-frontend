@@ -61,7 +61,7 @@ function UncontrolledExample(props) {
   containerClass="carousel-container"
   dotListClass="custom-dot-list-style"
   itemClass="carousel-item-padding-40-px"
-  CustomRightArrow={<CustomRightArrow/>}
+  
       >
         {listItems}
         
