@@ -1,6 +1,14 @@
 import React from 'react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const ProjectCard = (props) => {
+
+    const reel = props.images((pic) => 
+        <img src={pic.image} alt={props.name} key={pic.id}/>
+    );
+
+
     return (
         <div className="green card">    
             <div className="content">
@@ -10,6 +18,9 @@ const ProjectCard = (props) => {
                 <div className="description">
                     <p>{props.description}</p>
                 </div>
+                <Carousel>
+                    {reel}
+                </Carousel>
             </div>
             <div className="extra content">
                 <button className="ui button">
