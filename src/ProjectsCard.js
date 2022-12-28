@@ -4,7 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 
 const ProjectCard = (props) => {
 
-    const reel = props.images((pic) => 
+    const reel = props.images.map((pic) => 
         <img src={pic.image} alt={props.name} key={pic.id}/>
     );
 
