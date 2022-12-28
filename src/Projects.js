@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import projects from './ProjectApi'
 import 'react-multi-carousel/lib/styles.css';
-import ProjectCard from './ProjectsCard'
+import UncontrolledExample from './Carousel'
 
 
 
@@ -27,7 +27,7 @@ const Projects = () => {
 
                     } else {
                         return (
-                        <ProjectCard
+                        <UncontrolledExample
                             key = {project.name}
                             name = {project.name}
                             description = {project.description}
