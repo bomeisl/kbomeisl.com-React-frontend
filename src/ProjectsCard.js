@@ -18,9 +18,7 @@ const ProjectCard = (props) => {
                 <div className="description">
                     <p>{props.description}</p>
                 </div>
-                <Carousel>
-                    {reel}
-                </Carousel>
+               <img src={props.demo} alt="demo"/>
                 
             </div>
             <div className="extra content">
