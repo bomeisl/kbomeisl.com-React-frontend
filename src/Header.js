@@ -34,7 +34,7 @@ const Header = () => {
                                     Azure Blob Static Asset Storage Container. The backend and frontend are each hosted at different domains,
                                     so CORS is configured to allow requests between them.
                                     
-                                    </h3>
+                                    </h6>
                                 </Stack>                                  
                         </h1>                       
                 <Stack direction='horizontal' gap={3}>
