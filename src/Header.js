@@ -18,56 +18,65 @@ const Header = () => {
         setHeaderInfo(response.data)
     };
 
-    const icons = headerInfo.map((icon) => 
-        <Stack direction='horizontal' gap={1}>
-             <Figure>
-                <Figure.Image
-                    width={'8%'}
-                    height={'auto'}
-                    alt={icon.name}
-                    src={icon.image}/>
-            </Figure>        
-        </Stack>
-
-    );
-
+    
     const renderHeader = () => {
-    return (
-        <div>
-            <Stack direction='horizontal' gap={3}>
-                
-                <h1 class='ui header justify-content-center'>
-                    <Stack direction='vertical' gap={3}>
-                        <h1 class="display 2 ">Kyle Bomeisl</h1>
-                        <h2 class="display 4 text-muted">Software Engineer</h2>
-                    </Stack>  
-                </h1>
+        return(
+            <div className="ui three stackable raised cards">
+                {headerInfo.map(header => {
 
-            <ListGroup horizontal>
-                {icons}
-            </ListGroup>
+                    if(!header){
+                        return <div>One moment please...</div>
 
-            </Stack>
-            
-            
-            <Navbar bg="light" variant="light">
-            
-                <Container>
+                    } else {
+                        return (
+                            <div>
+                            <Stack direction='horizontal' gap={3}>
                 
-                <Navbar.Brand href="#home">Kyle's Workshop</Navbar.Brand>
-                <Nav className="me-auto">
-                    <Nav.Link href="#home">About Me</Nav.Link>
-                    <Nav.Link href="#features">My Projects</Nav.Link>
-                    <Nav.Link href="#pricing">Musings (blog)</Nav.Link>
-                    <Nav.Link href="#pricing">How This Website Works</Nav.Link>
-                </Nav>
-                
-                </Container>
-            </Navbar>
-       
-        </div>
-    )
-    }
+                            <h1 class='ui header justify-content-center'>
+                                <Stack direction='vertical' gap={3}>
+                                    <h1 class="display 2 ">Kyle Bomeisl</h1>
+                                    <h2 class="display 4 text-muted">Software Engineer</h2>
+                                </Stack>  
+                            </h1>
+            
+                            <Stack direction='horizontal' gap={1}>
+                                <Figure>
+                                    <Figure.Image
+                                        width={'8%'}
+                                        height={'auto'}
+                                        alt={header.name}
+                                        src={header.image}/>
+                                </Figure>        
+                            </Stack>
+            
+            
+                        </Stack>
+                        
+                        
+                        <Navbar bg="light" variant="light">
+                        
+                            <Container>
+                            
+                            <Navbar.Brand href="#home">Kyle's Workshop</Navbar.Brand>
+                            <Nav className="me-auto">
+                                <Nav.Link href="#home">About Me</Nav.Link>
+                                <Nav.Link href="#features">My Projects</Nav.Link>
+                                <Nav.Link href="#pricing">Musings (blog)</Nav.Link>
+                                <Nav.Link href="#pricing">How This Website Works</Nav.Link>
+                            </Nav>
+                            
+                            </Container>
+                        </Navbar>
+                        </div>
+                                
+                        )
+                    }
+                })}
+
+            </div>
+        )
+    }    
+   
 
     useEffect(()=>{
         fetchHeader()
