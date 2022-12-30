@@ -30,6 +30,31 @@ const Header = () => {
                                     <h2 class="display 4 text-muted">Software Engineer</h2>
                                 </Stack>                                  
                         </h1>
+                        
+                        <Stack direction='horizontal' gap={1}>
+
+                {headerInfo.map(header => {
+                    
+                    if(!header){
+                        return <div>One moment please...</div>
+
+                    } else {
+                        return (
+                            <div>
+                            <div>
+            
+                            
+                                <Figure>
+                                    <Figure.Image
+                                        width={'25%'}
+                                        height={'4%'}
+                                        alt={header.name}
+                                        src={header.image}/>
+                                </Figure>        
+                         
+                            
+            
+                        </div> 
                         <h3>
                         <Navbar bg="light" variant="light">
                         
@@ -46,30 +71,7 @@ const Header = () => {
                         </Container>
                         </Navbar>
                         </h3>
-                        <Stack direction='horizontal' gap={1}>
-
-                {headerInfo.map(header => {
-                    
-                    if(!header){
-                        return <div>One moment please...</div>
-
-                    } else {
-                        return (
-                            <div>
-            
-                            
-                                <Figure>
-                                    <Figure.Image
-                                        width={'25%'}
-                                        height={'4%'}
-                                        alt={header.name}
-                                        src={header.image}/>
-                                </Figure>        
-                         
-                            
-            
                         </div> 
-                        
                                 
                         )
                     }
