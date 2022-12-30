@@ -4,19 +4,35 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Stack from 'react-bootstrap/Stack';
-import Card from 'react-bootstrap/Card';
 
 const Header = () => {
+
+    const [headerInfo,setHeaderInfo] = useState([]);
+
+    const fetchHeader = async () =>{
+        const response = await header.get('/header/')
+        setHeaderInfo(response.data)
+    };
+
+    const icons = headerInfo.map((icon) => 
+        <Stack direction='horizontal' gap={4}>
+            <img src={icon.image} alt={icon.name}/>
+        </Stack>
+
+    );
+
+    const renderHeader = () => {
     return (
         <div>
             <Stack direction='horizontal' gap={6}>
+                {icons}
                 <h1 class='ui header justify-content-center'>
                     <Stack direction='vertical' gap={3}>
                         <h1 class="display 2 ">Kyle Bomeisl</h1>
                         <h2 class="display 4 text-muted">Software Engineer</h2>
-                    </Stack>   
+                    </Stack>  
+
                 </h1>
-                <img src="https://www.flaticon.com/free-icons/contact"/>
             </Stack>
             
             
@@ -36,6 +52,21 @@ const Header = () => {
             </Navbar>
        
         </div>
+    )
+    }
+
+    useEffect(()=>{
+        fetchHeader()
+    },[])
+
+    return (
+        <>
+            <div>
+                
+                {renderHeader()}
+            </div>
+                
+        </>
     )
 }
 
