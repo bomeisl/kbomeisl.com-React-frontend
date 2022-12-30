@@ -5,13 +5,16 @@ import Skills from './Skills';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Stack } from 'react-bootstrap';
 
 
 function App() {
   return (
     <div className="App">
-     <Header />
-     <Projects />
+      <Stack direction='vertical' gap={4}>
+        <Header />
+        <Projects />
+     </Stack>
     </div>
   );
 }
