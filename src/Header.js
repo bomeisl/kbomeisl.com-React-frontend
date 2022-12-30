@@ -27,8 +27,12 @@ const Header = () => {
                         <h1 class='ui header justify-content-center'>
                             
                                 <Stack direction='vertical' gap={3}>
-                                    <h1 class="display 2 ">Kyle Bomeisl</h1>
-                                    <h2 class="display 4 text-muted">Software Engineer</h2>
+                                    <h1 class="display 1 ">Kyle Bomeisl</h1>
+                                    <h2 class="display 3 text-muted">Software Engineer</h2>
+                                    <h3 class="display 5">You are viewing a screen rendered by a React frontend consuming a 
+                                    Django REST API backend. 
+                                    
+                                    </h3>
                                 </Stack>                                  
                         </h1>                       
                 <Stack direction='horizontal' gap={3}>
