@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Stack from 'react-bootstrap/Stack';
 import Image from 'react-bootstrap/Image'
+import Figure from 'react-bootstrap/Figure';
 
 const Header = () => {
 
