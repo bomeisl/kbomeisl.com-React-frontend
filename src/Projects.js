@@ -4,6 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import UncontrolledExample from './Carousel';
 import ProjectCard from './ProjectsCard';
 import Card from 'react-bootstrap/Card';
+import Stack from 'react-bootstrap/Stack';
 
 
 const Projects = () => {
