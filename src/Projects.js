@@ -26,7 +26,15 @@ const Projects = () => {
                     } else {
                         return (
     
-            
+                    <div>
+                        <ProjectCard
+                            key = {project.name}
+                            name = {project.name}
+                            description = {project.description}
+                            github = {project.github}
+                            demo = {project.demo}
+                            images = {project.images}
+                        />
                         <UncontrolledExample
                             key = {project.name}
                             name = {project.name}
@@ -35,6 +43,7 @@ const Projects = () => {
                             demo = {project.demo}
                             images = {project.images}
                         />
+                    </div>
                                 
                         )
                     }
@@ -43,37 +52,6 @@ const Projects = () => {
             </div>
         )
     }
-
-    const renderHeadCard = () => {
-        return(
-            <div>
-            {projectInfo.map(project => {
-
-                if(!project){
-                    return <div>One moment please...</div>
-
-                } else {
-                    return (
-        
-                    <ProjectCard
-                        key = {project.name}
-                        name = {project.name}
-                        description = {project.description}
-                        github = {project.github}
-                        demo = {project.demo}
-                        images = {project.images}
-                    />
-                            
-                    )
-                }
-            })}
-            </div>
-        )
-
-    }
-      
-        
-      
 
     useEffect(()=>{
         fetchProjects()
@@ -84,11 +62,8 @@ const Projects = () => {
             <div className='ui center aligned container'>
                 <h1>Projects</h1>
             </div>
-            {renderCarousel.map(project => {
-                renderHeadCard()
+                
                 renderCarousel()
-            })}
-
         </>
     )
 }
