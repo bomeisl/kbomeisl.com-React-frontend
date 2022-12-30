@@ -11,12 +11,10 @@ const Header = () => {
         <div>
             <Stack direction='horizontal' gap={6}>
                 <h1 class='ui header justify-content-center'>
-                <Card border="primary" style={{ width: '100%' }}>
                     <Stack direction='vertical' gap={3}>
                         <h1 class="display 2 ">Kyle Bomeisl</h1>
                         <h2 class="display 4 text-muted">Software Engineer</h2>
-                    </Stack>
-                </Card>   
+                    </Stack>   
                 </h1>
                 <img src="https://www.flaticon.com/free-icons/contact"/>
             </Stack>
@@ -43,8 +41,3 @@ const Header = () => {
 
 export default Header;
 
-
-
-
-
- 

@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import projects from './ProjectApi'
+import React, { useEffect, useState } from 'react';
+import projects from './ProjectApi';
 import 'react-multi-carousel/lib/styles.css';
-import UncontrolledExample from './Carousel'
-import ProjectCard from './ProjectsCard'
+import UncontrolledExample from './Carousel';
+import ProjectCard from './ProjectsCard';
+import Card from 'react-bootstrap/Card';
 
 
 const Projects = () => {
@@ -25,8 +26,8 @@ const Projects = () => {
 
                     } else {
                         return (
-    
-                    <div>
+                    <Stack direction='vertical' gap={3}>
+                    <Card border="primary" style={{ width: '100%' }}>
                         <ProjectCard
                             key = {project.name}
                             name = {project.name}
@@ -43,7 +44,8 @@ const Projects = () => {
                             demo = {project.demo}
                             images = {project.images}
                         />
-                    </div>
+                    </Card>
+                    </Stack>
                                 
                         )
                     }
