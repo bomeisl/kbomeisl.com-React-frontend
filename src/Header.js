@@ -9,15 +9,17 @@ import Card from 'react-bootstrap/Card';
 const Header = () => {
     return (
         <div>
-            <Card border="primary" style={{ width: '18rem' }}>
+            
                 <h1 class='ui header'>
+                    
                     <Stack direction='vertical' gap={3}>
                         <h1 class="display 2 ">Kyle Bomeisl</h1>
                         <h2 class="display 4 text-muted">Software Engineer</h2>
                     </Stack>
+                   
                 </h1>
-            </Card>
-
+            
+            <Card border="primary" style={{ width: '18rem' }}>
             <Navbar bg="light" variant="light">
                 <Container>
                 <Navbar.Brand href="#home">Kyle's Workshop</Navbar.Brand>
@@ -29,6 +31,7 @@ const Header = () => {
                 </Nav>
                 </Container>
             </Navbar>
+        </Card>
         </div>
     )
 }
