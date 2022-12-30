@@ -19,9 +19,11 @@ const Header = () => {
                    
                 </h1>
             
-            <Card border="primary" style={{ width: '18rem' }}>
+            
             <Navbar bg="light" variant="light">
+            
                 <Container>
+                <Card border="primary" style={{ width: '18rem' }}>
                 <Navbar.Brand href="#home">Kyle's Workshop</Navbar.Brand>
                 <Nav className="me-auto">
                     <Nav.Link href="#home">About Me</Nav.Link>
@@ -29,9 +31,10 @@ const Header = () => {
                     <Nav.Link href="#pricing">Musings (blog)</Nav.Link>
                     <Nav.Link href="#pricing">How This Website Works</Nav.Link>
                 </Nav>
+                </Card>
                 </Container>
             </Navbar>
-        </Card>
+       
         </div>
     )
 }
