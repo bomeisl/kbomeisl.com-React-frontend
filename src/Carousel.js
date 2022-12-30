@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 const responsive = {
     superLargeDesktop: {
@@ -43,11 +44,16 @@ const [index, setIndex] = useState(0);
 
     const listItems = props.images.map((pic) =>
 
-    <WithStyles
-    description={pic.sub}
-    headline={pic.header}
-    image={pic.image}
-  />
+    <Card style={{ width: '18rem' }}>
+    <Card.Img variant="top" src={pic.image} />
+    <Card.Body>
+      <Card.Title>{pic.header}</Card.Title>
+      <Card.Text>
+        {pic.sub}
+      </Card.Text>
+      <Button variant="primary">"Github"</Button>
+    </Card.Body>
+  </Card>
     
     );
 

@@ -13,6 +13,7 @@ const ProjectCard = (props) => {
                 <div className="description">
                     <p>{props.description}</p>
                 </div>
+                
                
                 
             </div>
