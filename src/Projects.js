@@ -59,12 +59,10 @@ const Projects = () => {
 
     return (
         <>
-            <div className='ui center aligned container'>
-                <h1>Projects</h1>
-                <spacer type="horizontal" width="20" height="300">  </spacer>
-            </div>
+            <div>
                 
                 {renderCarousel()}
+            </div>
                 
         </>
     )
