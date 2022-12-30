@@ -22,7 +22,9 @@ const Header = () => {
     const renderHeader = () => {
         return(
             <div className="ui three stackable raised cards">
+                <Stack direction='vertical' gap={2}>
                         <h1 class='ui header justify-content-center'>
+                            
                                 <Stack direction='vertical' gap={3}>
                                     <h1 class="display 2 ">Kyle Bomeisl</h1>
                                     <h2 class="display 4 text-muted">Software Engineer</h2>
@@ -46,6 +48,7 @@ const Header = () => {
                                 </Container>
                                 </Navbar>
                         </h1>
+                        <Stack direction='horizontal' gap={1}>
 
                 {headerInfo.map(header => {
                     
@@ -56,7 +59,7 @@ const Header = () => {
                         return (
                             <div>
             
-                            <Stack direction='horizontal' gap={1}>
+                            
                                 <Figure>
                                     <Figure.Image
                                         width={'8%'}
@@ -64,14 +67,17 @@ const Header = () => {
                                         alt={header.name}
                                         src={header.image}/>
                                 </Figure>        
-                            </Stack>
+                         
+                            
             
-            
-                        </div>   
+                        </div> 
+                        
                                 
                         )
                     }
                 })}
+                </Stack>
+                </Stack>  
             </div>
           
         )
