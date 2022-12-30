@@ -21,7 +21,7 @@ const Header = () => {
         <Stack direction='horizontal' gap={4}>
              <Figure>
                 <Figure.Image
-                    width={8%}
+                    width={'8%'}
                     height={auto}
                     alt={icon.name}
                     src={icon.image}/>
