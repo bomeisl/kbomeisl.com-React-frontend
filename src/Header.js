@@ -9,7 +9,7 @@ import Card from 'react-bootstrap/Card';
 const Header = () => {
     return (
         <div>
-            
+            <Stack direction='horizontal' gap={6}>
                 <h1 class='ui header'>
                 <Card border="primary" style={{ width: '18rem' }}>
                     <Stack direction='vertical' gap={3}>
@@ -18,6 +18,8 @@ const Header = () => {
                     </Stack>
                 </Card>   
                 </h1>
+                <img src="https://www.flaticon.com/free-icons/contact"/>
+            </Stack>
             
             
             <Navbar bg="light" variant="light">
