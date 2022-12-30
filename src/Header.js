@@ -18,13 +18,13 @@ const Header = () => {
 
     const icons = headerInfo.map((icon) => 
         <Stack direction='horizontal' gap={4}>
-            <Image
-            rounded = {true}
-            thumbnail= {true}
-            fluid = {true}
-            >
-                <img src={icon.image} alt={icon.name}/>
-            </Image>            
+             <Figure>
+                <Figure.Image
+                    width={8%}
+                    height={auto}
+                    alt={icon.name}
+                    src={icon.image}/>
+            </Figure>        
         </Stack>
 
     );
@@ -42,7 +42,7 @@ const Header = () => {
                 </h1>
 
                 {icons}
-                
+
             </Stack>
             
             
