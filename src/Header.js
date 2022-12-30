@@ -7,7 +7,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Stack from 'react-bootstrap/Stack';
 import Image from 'react-bootstrap/Image'
 import Figure from 'react-bootstrap/Figure';
-import { ListGroup } from 'react-bootstrap';
+import Alert from 'react-bootstrap/Alert';
+import './Header.css'
 
 const Header = () => {
 
@@ -27,17 +28,17 @@ const Header = () => {
                         <h1 class='ui header justify-content-center'>
                             
                                 <Stack direction='vertical' gap={3}>
-                                    <h1 class="display 1 ">Kyle Bomeisl</h1>
-                                    <h2 class="display 3 text-muted">Software Engineer</h2>
-                                    <h6 class="display 7">
-                                    <Well>
+                                    <h1 class="display 1 " id="name">Kyle Bomeisl</h1>
+                                    <h2 class="display 3 text-muted" id = "occ">Software Engineer</h2>
+                                    <h6 class="display 7" id="intro">
+                                    
                                     Behind every great Web app is a great RESTful API with CRUD operations. This one is no exception of course.
                                     You are viewing a screen rendered by a React frontend I built that is consuming a 
                                     Django RESTful API backend with a PostgreSQL database that I lovingly designed and programmed as well. The static and media assets are served from a 
                                     Azure Blob Static Asset Storage Container that I created and configured. The backend and frontend are each hosted at 
                                     different domains, so I configured CORS to allow requests between them. Welcome to the world wide web of world wide
                                     web development! And welcome to the landing screen of my portfolio web app!
-                                    </Well>
+                                   
                                     </h6>
                                 </Stack>                                  
                         </h1>                       
@@ -74,7 +75,7 @@ const Header = () => {
                 </Stack>
 
                 <h3>
-                        <Navbar bg="light" variant="light">
+                        <Navbar bg="light" variant="light" id="nav">
                         
                         <Container>
                 

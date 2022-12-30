@@ -43,3 +43,11 @@
     height:20px;
   }
 }
+
+h1 {
+  font-family: system-ui, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+h2 h3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
