@@ -1,4 +1,6 @@
 import React from 'react'
+import React, { useEffect, useState } from 'react';
+import projects from './ProjectApi';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -10,7 +12,7 @@ const Header = () => {
     const [headerInfo,setHeaderInfo] = useState([]);
 
     const fetchHeader = async () =>{
-        const response = await header.get('/header/')
+        const response = await projects.get('/header/')
         setHeaderInfo(response.data)
     };
 
