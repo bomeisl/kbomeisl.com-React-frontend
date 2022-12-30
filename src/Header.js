@@ -29,7 +29,8 @@ const Header = () => {
                                 <Stack direction='vertical' gap={3}>
                                     <h1 class="display 1 ">Kyle Bomeisl</h1>
                                     <h2 class="display 3 text-muted">Software Engineer</h2>
-                                    <h6 class="display 7">You are viewing a screen rendered by a React frontend I built that is consuming a 
+                                    <h6 class="display 7">Behind every great Web app is a great REST API. This one is no exception of course.
+                                    You are viewing a screen rendered by a React frontend I built that is consuming a 
                                     Django REST API backend that I built as well. The static and media assets are served from a PostgreSQL database and a Microsoft
                                     Azure Blob Static Asset Storage Container that I created and configured. The backend and frontend are each hosted at 
                                     different domains, so I configured CORS to allow requests between them. Welcome to the world wide web of world wide
