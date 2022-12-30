@@ -6,7 +6,6 @@ import Stack from 'react-bootstrap/Stack';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Stack } from 'react-bootstrap';
 
 
 function App() {
