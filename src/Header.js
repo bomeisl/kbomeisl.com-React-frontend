@@ -1,4 +1,3 @@
-import React from 'react'
 import React, { useEffect, useState } from 'react';
 import projects from './ProjectApi';
 import 'bootstrap/dist/css/bootstrap.min.css';
