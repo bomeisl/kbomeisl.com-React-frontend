@@ -5,10 +5,6 @@ import UncontrolledExample from './Carousel'
 import ProjectCard from './ProjectsCard'
 
 
-
-
-
-
 const Projects = () => {
     const [projectInfo,setProjectInfo] = useState([]);
 
@@ -73,6 +69,7 @@ const Projects = () => {
             })}
             </div>
         )
+
     }
       
         
@@ -87,13 +84,11 @@ const Projects = () => {
             <div className='ui center aligned container'>
                 <h1>Projects</h1>
             </div>
-            <div>
-                {renderHeadCard()}
-                {renderCarousel()}
-            </div>
-            
-           
-            
+            {renderCarousel.map(project => {
+                renderHeadCard()
+                renderCarousel()
+            })}
+
         </>
     )
 }
