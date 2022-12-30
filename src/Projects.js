@@ -61,9 +61,11 @@ const Projects = () => {
         <>
             <div className='ui center aligned container'>
                 <h1>Projects</h1>
+                <spacer type="vertical" width = "20" height="200"> ♢ </spacer>
             </div>
                 
                 {renderCarousel()}
+                <spacer type="horizontal" width="20" height="100"> ♢ </spacer>
         </>
     )
 }
