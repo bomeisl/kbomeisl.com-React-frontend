@@ -10,8 +10,8 @@ const Header = () => {
     return (
         <div>
             <Stack direction='horizontal' gap={6}>
-                <h1 class='ui header'>
-                <Card border="primary" style={{ width: '18rem' }}>
+                <h1 class='ui header justify-content-center'>
+                <Card border="primary" style={{ width: '100%' }}>
                     <Stack direction='vertical' gap={3}>
                         <h1 class="display 2 ">Kyle Bomeisl</h1>
                         <h2 class="display 4 text-muted">Software Engineer</h2>
@@ -42,3 +42,9 @@ const Header = () => {
 }
 
 export default Header;
+
+
+
+
+
+ 
