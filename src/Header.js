@@ -22,7 +22,7 @@ const Header = () => {
              <Figure>
                 <Figure.Image
                     width={'8%'}
-                    height={auto}
+                    height={'auto'}
                     alt={icon.name}
                     src={icon.image}/>
             </Figure>        
