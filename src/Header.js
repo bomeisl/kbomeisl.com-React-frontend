@@ -7,6 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Stack from 'react-bootstrap/Stack';
 import Image from 'react-bootstrap/Image'
 import Figure from 'react-bootstrap/Figure';
+import { ListGroup } from 'react-bootstrap';
 
 const Header = () => {
 
@@ -42,7 +43,9 @@ const Header = () => {
                     </Stack>  
                 </h1>
 
+            <ListGroup horizontal>
                 {icons}
+            </ListGroup>
 
             </Stack>
             
