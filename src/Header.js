@@ -23,7 +23,7 @@ const Header = () => {
         return(
             <div className="ui three stackable raised cards">
                 <Stack direction='vertical' gap={3}>
-                <Stack direction='horizontal' gap={2}>
+                <Stack direction='vertical' gap={2}>
                         <h1 class='ui header justify-content-center'>
                             
                                 <Stack direction='vertical' gap={3}>
@@ -31,7 +31,7 @@ const Header = () => {
                                     <h2 class="display 4 text-muted">Software Engineer</h2>
                                 </Stack>                                  
                         </h1>                       
-
+                <Stack direction='horizontal' gap={3}>
                 {headerInfo.map(header => {
                     
                     if(!header){
@@ -60,6 +60,7 @@ const Header = () => {
                         )
                     }
                 })}
+                </Stack>
                 </Stack>
 
                 <h3>
