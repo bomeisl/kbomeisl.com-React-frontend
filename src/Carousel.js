@@ -43,37 +43,70 @@ const [index, setIndex] = useState(0);
 
     const listItems = props.images.map((pic) =>
 
-    <Card className="bg-dark text-white" key = {pic.id}>
-        <Card.Img src={pic.image} alt="Card image" />
-        <Card.ImgOverlay>
-        <Card.Title>{pic.header}</Card.Title>
-        <Card.Text>
-            {pic.sub}
-        </Card.Text>
-        </Card.ImgOverlay>
-    </Card>
-   
- 
+    <WithStyles
+    description={pic.sub}
+    headline={pic.header}
+    image={pic.image}
+  />
     
     );
 
     return (
-      <Carousel responsive={responsive}
-      swipeable={true}
-  draggable={false}
-  showDots={true}
-  infinite={true}
-  autoPlay={true}
-  autoPlaySpeed={5000}
-  keyBoardControl={true}
-  customTransition="all .5"
-  transitionDuration={500}
-  containerClass="carousel-container"
-  dotListClass="custom-dot-list-style"
-  itemClass="carousel-item-padding-40-px"
-  CustomRightArrow={<CustomRightArrow/>}
-      >
-        {listItems}
+      
+      <Carousel
+  additionalTransfrom={0}
+  arrows
+  autoPlaySpeed={3000}
+  centerMode={false}
+  className=""
+  containerClass="container-with-dots"
+  dotListClass=""
+  draggable
+  focusOnSelect={false}
+  infinite
+  itemClass=""
+  keyBoardControl
+  minimumTouchDrag={80}
+  pauseOnHover
+  renderArrowsWhenDisabled={false}
+  renderButtonGroupOutside={false}
+  renderDotsOutside={false}
+  responsive={{
+    desktop: {
+      breakpoint: {
+        max: 3000,
+        min: 1024
+      },
+      items: 3,
+      partialVisibilityGutter: 40
+    },
+    mobile: {
+      breakpoint: {
+        max: 464,
+        min: 0
+      },
+      items: 1,
+      partialVisibilityGutter: 30
+    },
+    tablet: {
+      breakpoint: {
+        max: 1024,
+        min: 464
+      },
+      items: 2,
+      partialVisibilityGutter: 30
+    }
+  }}
+  rewind={false}
+  rewindWithAnimation={false}
+  rtl={false}
+  shouldResetAutoplay
+  showDots={false}
+  sliderClass=""
+  slidesToSlide={1}
+  swipeable
+>
+  {listItems}
         
       </Carousel>
     );
