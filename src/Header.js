@@ -55,7 +55,14 @@ const Header = () => {
                             
             
                         </div> 
-                        <h3>
+                        
+                        </div> 
+                                
+                        )
+                    }
+                })}
+
+                <h3>
                         <Navbar bg="light" variant="light">
                         
                         <Container>
@@ -71,11 +78,6 @@ const Header = () => {
                         </Container>
                         </Navbar>
                         </h3>
-                        </div> 
-                                
-                        )
-                    }
-                })}
                 </Stack>
                 </Stack>  
             </div>
