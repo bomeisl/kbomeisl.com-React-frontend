@@ -11,19 +11,19 @@ const Header = () => {
         <div>
             
                 <h1 class='ui header'>
-                    
+                <Card border="primary" style={{ width: '18rem' }}>
                     <Stack direction='vertical' gap={3}>
                         <h1 class="display 2 ">Kyle Bomeisl</h1>
                         <h2 class="display 4 text-muted">Software Engineer</h2>
                     </Stack>
-                   
+                </Card>   
                 </h1>
             
             
             <Navbar bg="light" variant="light">
             
                 <Container>
-                <Card border="primary" style={{ width: '18rem' }}>
+                
                 <Navbar.Brand href="#home">Kyle's Workshop</Navbar.Brand>
                 <Nav className="me-auto">
                     <Nav.Link href="#home">About Me</Nav.Link>
@@ -31,7 +31,7 @@ const Header = () => {
                     <Nav.Link href="#pricing">Musings (blog)</Nav.Link>
                     <Nav.Link href="#pricing">How This Website Works</Nav.Link>
                 </Nav>
-                </Card>
+                
                 </Container>
             </Navbar>
        
