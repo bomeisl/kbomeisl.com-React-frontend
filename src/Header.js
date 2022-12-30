@@ -17,7 +17,7 @@ const Header = () => {
 
     const icons = headerInfo.map((icon) => 
         <Stack direction='horizontal' gap={4}>
-            <img src={icon.image} alt={icon.name}/>
+            <img src={icon.image} alt={icon.name} width="10%" height="auto"/>
         </Stack>
 
     );
