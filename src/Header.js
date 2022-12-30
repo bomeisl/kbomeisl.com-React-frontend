@@ -29,8 +29,10 @@ const Header = () => {
                                 <Stack direction='vertical' gap={3}>
                                     <h1 class="display 1 ">Kyle Bomeisl</h1>
                                     <h2 class="display 3 text-muted">Software Engineer</h2>
-                                    <h3 class="display 5">You are viewing a screen rendered by a React frontend consuming a 
-                                    Django REST API backend. 
+                                    <h3 class="display 7">You are viewing a screen rendered by a React frontend consuming a 
+                                    Django REST API backend. The static assets are served from a PostgreSQL database and a Microsoft
+                                    Azure Blob Static Asset Storage Container. The backend and frontend are each hosted at different domains,
+                                    so CORS headers are necessary for them to talk to each other.
                                     
                                     </h3>
                                 </Stack>                                  
