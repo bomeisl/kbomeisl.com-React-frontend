@@ -60,7 +60,7 @@ const Header = () => {
                             
                                 <Figure>
                                     <Figure.Image
-                                        width={'8%'}
+                                        width={'12%'}
                                         height={'auto'}
                                         alt={header.name}
                                         src={header.image}/>
