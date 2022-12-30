@@ -18,7 +18,7 @@ const Header = () => {
     };
 
     const icons = headerInfo.map((icon) => 
-        <Stack direction='horizontal' gap={4}>
+        <Stack direction='horizontal' gap={1}>
              <Figure>
                 <Figure.Image
                     width={'8%'}
