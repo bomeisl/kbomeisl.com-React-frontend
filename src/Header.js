@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Stack from 'react-bootstrap/Stack';
+import Image from 'react-bootstrap/Image'
 
 const Header = () => {
 
@@ -17,7 +18,13 @@ const Header = () => {
 
     const icons = headerInfo.map((icon) => 
         <Stack direction='horizontal' gap={4}>
-            <img src={icon.image} alt={icon.name} width="10%" height="auto"/>
+            <Image
+            rounded = {true}
+            thumbnail= {true}
+            fluid = {true}
+            >
+                <img src={icon.image} alt={icon.name}/>
+            </Image>            
         </Stack>
 
     );
@@ -25,15 +32,17 @@ const Header = () => {
     const renderHeader = () => {
     return (
         <div>
-            <Stack direction='horizontal' gap={6}>
-                {icons}
+            <Stack direction='horizontal' gap={3}>
+                
                 <h1 class='ui header justify-content-center'>
                     <Stack direction='vertical' gap={3}>
                         <h1 class="display 2 ">Kyle Bomeisl</h1>
                         <h2 class="display 4 text-muted">Software Engineer</h2>
                     </Stack>  
-
                 </h1>
+
+                {icons}
+                
             </Stack>
             
             
