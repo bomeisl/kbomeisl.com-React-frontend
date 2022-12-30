@@ -86,8 +86,10 @@ const Projects = () => {
             <div className='ui center aligned container'>
                 <h1>Projects</h1>
             </div>
-            {renderHeadCard()}
-            {renderCarousel()}
+            <div>
+                {renderHeadCard()}
+                {renderCarousel()}
+            </div>
             
            
             
