@@ -23,7 +23,7 @@ const Icons = () => {
                     } else {
                         return (
                 
-                            <div>
+                            <div class="center">
             
                             
                                 <Figure>
