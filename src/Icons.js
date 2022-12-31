@@ -3,6 +3,7 @@ import Stack from 'react-bootstrap/Stack';
 import projects from './ProjectApi';
 import Figure from 'react-bootstrap/Figure';
 
+
 const Icons = () => {
 
     const [headerInfo,setHeaderInfo] = useState([]);
@@ -30,7 +31,9 @@ const Icons = () => {
                                         width={'25%'}
                                         height={'auto'}
                                         alt={header.name}
-                                        src={header.image}/>
+                                        src={header.image}
+                                        id="icon-soc"
+                                        />
                                 </Figure>        
                          
                             
