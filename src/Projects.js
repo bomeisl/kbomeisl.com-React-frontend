@@ -5,7 +5,6 @@ import UncontrolledExample from './Carousel';
 import ProjectCard from './ProjectsCard';
 import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import './Carousel.css'
 
 
@@ -22,10 +21,10 @@ const Projects = () => {
     const renderCarousel = () => {
         return(
             <div className="ui three stackable raised cards">
-                <Jumbotron>
+                <div class="jumbotron m-3">
                     <h1 id="head">Projects</h1>
                     <h3 id="head-sub">Software projects I've created</h3>
-                </Jumbotron>
+                </div>
                 {projectInfo.map(project => {
 
                     if(!project){
