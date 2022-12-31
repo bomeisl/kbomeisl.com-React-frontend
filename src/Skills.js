@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import './Skills.css'
 import projects from './ProjectApi';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 
 const Projects = () => {
