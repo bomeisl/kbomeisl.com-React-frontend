@@ -37,30 +37,8 @@ const Skills = () => {
                     </div>
                     
 
-             <Card>
-                <Card.Header>
-                    <Nav variant="tabs" defaultActiveKey="#first">
-
-                    <Nav.Item>
-                        <Nav.Link href="#first">{cluster.category}</Nav.Link>
-                    </Nav.Item>
-                    
-                    </Nav>
-                </Card.Header>
-                <Card.Body>
-                    <Card.Title>Special title treatment</Card.Title>
-
-                    <ListGroup variant="flush">
-                        
-                        {cluster.skills.map(skill => 
-                            <ListGroup.Item>{skill.language}</ListGroup.Item>
-                        )}
-                                                
-                    </ListGroup>
-        
-                </Card.Body>
-                </Card>
-            </div>  
+             
+                </div>  
         )
             }
         })}
