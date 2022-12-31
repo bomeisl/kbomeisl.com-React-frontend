@@ -19,7 +19,8 @@ const Projects = () => {
 
         const styles = {
             card: {
-              backgroundColor: 'lightgray'
+              backgroundColor: 'lightgray',
+              width: '30vw'
               
             },
             cardImage: {
