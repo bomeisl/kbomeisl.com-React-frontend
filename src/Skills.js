@@ -6,54 +6,71 @@ import './Skills.css'
 import projects from './ProjectApi';
 
 
-const Skills = () => {
+const Projects = () => {
+    const [projectInfo,setProjectInfo] = useState([]);
 
-    const [skillInfo,setSkillInfo] = useState([]);
-
-    const fetchSkills = async () =>{
+    const fetchProjects = async () =>{
         const response = await projects.get('/skills/')
-        setSkillInfo(response.data)
+        setProjectInfo(response.data)
     }
 
-   
-        
-        
-        
-        {skillInfo.map(cluster => {
-
-            
 
 
-            if(!cluster){
-                return <div>One moment please...</div>
+    const renderCarousel = () => {
+        return(
+            <div className="ui three stackable raised cards">
+                <div class="jumbotron m-3">
+                    <h1 id="head">About Me</h1>
+                    <h3 id="head-sub"></h3>
+                </div>
+                {projectInfo.map(project => {
 
-            } else {
-                return (
-                    
-                <div>
-                    <div class="jumbotron m-3">
-                        <h1 id="head-skill">About Me</h1>
-                        <h3 id="head-sub-skill">Software projects I've created</h3>
-                    </div>
-                    
+                    if(!project){
+                        return <div>One moment please...</div>
 
-             
-                </div>  
+                    } else {
+                        return (
+                            <CardGroup>
+
+                            <Card>
+                              <Card.Img variant="top" src={project.icon} />
+
+                              <Card.Body>
+                                <Card.Title>{project.category}</Card.Title>
+                                <ListGroup variant="flush">
+
+                                    {project.skills.map(skill =>
+                                    <ListGroup.Item>{skill.language}</ListGroup.Item>
+                                    )}
+       
+                                </ListGroup>
+                              </Card.Body>
+                              
+                            </Card>
+                            
+                          </CardGroup>
+                                
+                        )
+                    }
+                })}
+
+            </div>
         )
-            }
-        })}
-
-        
-    
-          useEffect(()=>{
-            fetchSkills()
-        },[])
-   
-
     }
 
-   
-    
+    useEffect(()=>{
+        fetchProjects()
+    },[])
 
+    return (
+        <>
+            <div>
+                
+                {renderCarousel()}
+            </div>
+                
+        </>
+    )
+}
 
-export default Skills;
+export default Projects;
