@@ -19,14 +19,16 @@ const Projects = () => {
 
         const styles = {
             card: {
-              backgroundColor: 'lightgray',
-              borderRadius: 55,
-              padding: '3rem'
+              backgroundColor: 'lightgray'
+              
             },
             cardImage: {
               objectFit: 'cover',
               width: '30vw',
                 height: 'auto'
+            },
+            cardGroup: {
+                padding: '5px'
             }
           }
           
@@ -37,7 +39,7 @@ const Projects = () => {
                     <h1 id="head-skill">About Me</h1>
                     <h3 id="head-sub"></h3>
                 </div>
-                <CardGroup>
+                <CardGroup style={styles.cardGroup}>
 
                 {projectInfo.map(project => {
 
