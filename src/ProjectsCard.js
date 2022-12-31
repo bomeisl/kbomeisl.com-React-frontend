@@ -1,6 +1,6 @@
 import React from 'react';
 import 'react-multi-carousel/lib/styles.css';
-import './ProjectCard.css'
+import './ProjectsCard.css'
 
 const ProjectCard = (props) => {
 
