@@ -20,6 +20,11 @@
 }
 
 #button-text {
-    color: aliceblue;
+    color: rgb(215, 214, 214);
     font-weight: lighter;
+}
+
+#butt {
+    align-self: center;
+    color:deepskyblue;
 }

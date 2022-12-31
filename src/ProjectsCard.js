@@ -18,8 +18,8 @@ const ProjectCard = (props) => {
                
                 
             </div>
-            <div className="extra content">
-                <button className="ui button">
+            <div className="extra center content">
+                <button className="ui center button">
                     <p id="button-text">{props.github}</p>
                 </button>
             
