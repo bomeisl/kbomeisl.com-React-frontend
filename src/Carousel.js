@@ -54,7 +54,7 @@ const [index, setIndex] = useState(0);
       <Card.Text >
         <p id="pic-sub">{pic.sub}</p>
       </Card.Text>
-      <Button id="card-butt" variant="primary">"Github"</Button>
+      
     </Card.Body>
     </Card>
     

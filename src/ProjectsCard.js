@@ -20,7 +20,7 @@ const ProjectCard = (props) => {
             </div>
             <div className="extra content">
                 <button className="ui button">
-                    {props.github}
+                    <p id="proj-des">{props.github}</p>
                 </button>
             
             </div>
