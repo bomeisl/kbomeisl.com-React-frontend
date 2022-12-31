@@ -13,7 +13,7 @@ const Icons = () => {
     };
 
 
-<Stack direction='horizontal' gap={4}>
+<Stack direction='horizontal' gap={6}>
                 {headerInfo.map(header => {
                     
                     if(!header){
