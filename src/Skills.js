@@ -25,8 +25,7 @@ const Projects = () => {
             },
             cardImage: {
               objectFit: 'cover',
-              borderRadius: 55,
-              width: '50vw',
+              width: '30vw',
             height: '30vh'
             }
           }
@@ -38,6 +37,8 @@ const Projects = () => {
                     <h1 id="head-skill">About Me</h1>
                     <h3 id="head-sub"></h3>
                 </div>
+                <CardGroup>
+
                 {projectInfo.map(project => {
 
                     if(!project){
@@ -45,8 +46,7 @@ const Projects = () => {
 
                     } else {
                         return (
-                            <CardGroup>
-
+                            
                             <Card>
                               <Card.Img src={project.icon} variant="top" style={styles.cardImage} />
 
@@ -63,11 +63,12 @@ const Projects = () => {
                               
                             </Card>
                             
-                          </CardGroup>
+                         
                                 
                         )
                     }
                 })}
+                 </CardGroup>
 
             </div>
         )
