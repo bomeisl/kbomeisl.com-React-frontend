@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
     return (
         <div className="green card">    
             <div className="content">
-                <h2 id="proj-name">
+                <h2 class="center" id="proj-name">
                     {props.name}
                 </h2>
                 <div className="description">
@@ -20,7 +20,7 @@ const ProjectCard = (props) => {
             </div>
             <div className="extra content">
                 <button className="ui button">
-                    <p id="proj-des">{props.github}</p>
+                    <p id="button-text">{props.github}</p>
                 </button>
             
             </div>
