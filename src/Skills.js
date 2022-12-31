@@ -31,7 +31,7 @@ const Skills = () => {
             } else {
 
              <Card style={{ width: '18rem' }}>
-                <Card.Header>Web Development</Card.Header>
+                <Card.Header>{skillCluster.category}</Card.Header>
                 <Card.Img variant="top" src={skillCluster.icon} />
                     <SkillsList
                         cluster = {skillCluster.skills}

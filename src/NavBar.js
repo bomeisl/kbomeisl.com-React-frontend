@@ -22,7 +22,7 @@ const NavBar = () => {
                                     </Link>
                                 </Nav.Link>
                                 <Nav.Link id="link" href="#home">
-                                    <Link id="link" to="/Skills"> 
+                                    <Link id="link" to="/skills"> 
                                     <p id="link"> About Me </p>
                                     </Link>
                                 </Nav.Link>
