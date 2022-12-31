@@ -1,5 +1,6 @@
 import React from 'react';
 import 'react-multi-carousel/lib/styles.css';
+import './Carousel.css'
 
 const ProjectCard = (props) => {
 
@@ -7,11 +8,11 @@ const ProjectCard = (props) => {
     return (
         <div className="green card">    
             <div className="content">
-                <h2>
+                <h2 id="proj-name">
                     {props.name}
                 </h2>
                 <div className="description">
-                    <p>{props.description}</p>
+                    <p id="proj-des">{props.description}</p>
                 </div>
                 
                
