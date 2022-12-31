@@ -32,9 +32,7 @@ const Projects = () => {
                             <CardGroup>
 
                             <Card>
-                              <Card.Img variant="top"> 
-                                <img src={project.icon} alt="skill" width="10%" height="auto" />
-                              </Card.Img>
+                              <Card.Img width="10%" height="auto" variant="top" />
 
                               <Card.Body>
                                 <Card.Title>{project.category}</Card.Title>

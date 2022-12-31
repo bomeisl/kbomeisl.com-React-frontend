@@ -13,3 +13,9 @@
   align-items: center;
   text-align: center;
 }
+
+cardImage {
+  
+  width: '50vw';
+  height: '30vh';
+}
