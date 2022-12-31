@@ -31,7 +31,7 @@ const Header = () => {
                     } else {
                         return (
                 
-                            <div>
+                            <div id="icons">
             
                             
                                 <Figure>
