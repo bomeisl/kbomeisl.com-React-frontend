@@ -23,7 +23,7 @@ const Projects = () => {
             <div className="ui three stackable raised cards">
                 <div class="jumbotron m-3">
                     <h1 id="head">Projects</h1>
-                    <h3 id="head-sub">Software projects I've created</h3>
+                    <h3 id="head-sub"></h3>
                 </div>
                 {projectInfo.map(project => {
 

@@ -15,13 +15,11 @@ const Projects = () => {
         setProjectInfo(response.data)
     }
 
-
-
     const renderCarousel = () => {
         return(
             <div className="ui three stackable raised cards">
                 <div class="jumbotron m-3">
-                    <h1 id="head">About Me</h1>
+                    <h1 id="head-skill">About Me</h1>
                     <h3 id="head-sub"></h3>
                 </div>
                 {projectInfo.map(project => {
@@ -34,7 +32,7 @@ const Projects = () => {
                             <CardGroup>
 
                             <Card>
-                              <Card.Img variant="top" src={project.icon} />
+                              <Card.Img width="10%" height="auto" variant="top" src={project.icon} />
 
                               <Card.Body>
                                 <Card.Title>{project.category}</Card.Title>

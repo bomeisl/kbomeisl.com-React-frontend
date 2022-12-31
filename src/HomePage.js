@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <div class="jumbotron m-3">
                     <h1 id="head-home">Welcome to Kyle's Workshop!</h1>
-                    <h3 id="head-sub-home">A Portfolio App and so much more!</h3>
+                    <h3 id="head-sub-home"></h3>
             </div>
             <h6 class="display 7" id="intro-home">
                                     Behind every great Web app is a great RESTful API with CRUD operations. This one is no exception of course.
