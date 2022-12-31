@@ -3,6 +3,7 @@ import SkillsList from './SkillsList.js'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { CardGroup } from 'react-bootstrap';
+import './Skills.css'
 
 
 const Skills = () => {
@@ -24,6 +25,11 @@ const Skills = () => {
     );
 
     return (
+        <div>
+        <div class="jumbotron m-3">
+                    <h1 id="head-skill">About Me</h1>
+                    <h3 id="head-sub-skill">Software projects I've created</h3>
+                </div>
         <CardGroup>
              <Card style={{ width: '18rem' }}>
                 <Card.Header>Web Development</Card.Header>
@@ -49,7 +55,7 @@ const Skills = () => {
                     </ListGroup>
             </Card>
         </CardGroup>
-            
+        </div>    
     )
 }
 

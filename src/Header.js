@@ -5,10 +5,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Stack from 'react-bootstrap/Stack';
-import Image from 'react-bootstrap/Image'
 import Figure from 'react-bootstrap/Figure';
-import Alert from 'react-bootstrap/Alert';
 import './Header.css'
+import {Link} from 'react-router-dom'
 
 const Header = () => {
 
@@ -41,7 +40,7 @@ const Header = () => {
                                     different domains, so I configured CORS to allow requests between them. Welcome to the world wide web of world wide
                                     web development! And welcome to the landing screen of my portfolio web app!
                                     <br></br><br></br>
-                                    Hi
+                                    
                                     
                                     </h6>
                                 </Stack>                                  
@@ -86,8 +85,12 @@ const Header = () => {
                         <Navbar.Brand id = "nav-logo" href="#home">Kyle's Workshop</Navbar.Brand>
                             <Nav className="me-auto">
                                 <Stack direction='horizontal' gap={4}>
-                                <Nav.Link id="link" href="#home">About Me</Nav.Link>
-                                <Nav.Link id="link" href="#features">My Projects</Nav.Link>
+                                <Nav.Link id="link" href="#home">
+                                    <Link to="/Skills"> About Me </Link>
+                                </Nav.Link>
+                                <Nav.Link id="link" href="#features">
+                                    <Link to="/projects"> My Projects </Link>
+                                </Nav.Link>
                                 <Nav.Link id="link" href="#pricing">My Musings (blog)</Nav.Link>
                                 <Nav.Link id="link" href="#pricing">How This Website Works</Nav.Link>
                                 </Stack>
