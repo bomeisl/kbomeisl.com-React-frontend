@@ -20,8 +20,9 @@ function App() {
         <h1  id="name">Kyle Bomeisl</h1>
         <h2  id="occ">Software Engineer</h2>
       </h1>
-      <Icons/>
+      
         <NavBar/>
+        <Icons/>
     </Stack>
     <Routes>
       <Route path="/" element={<Header/>}/>
