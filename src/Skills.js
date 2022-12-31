@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SkillsList from './SkillsList.js'
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
 import { CardGroup } from 'react-bootstrap';
 import './Skills.css'
 import projects from './ProjectApi';
@@ -16,17 +15,6 @@ const Skills = () => {
         setSkillInfo(response.data)
     }
 
-    const Web_inp = Web.map((skill)=> 
-        <ListGroup.Item>{skill}</ListGroup.Item>
-    );
-
-    const Android_inp = Android.map((skill)=> 
-        <ListGroup.Item>{skill}</ListGroup.Item>
-    );
-
-    const Sci_inp = Sci.map((skill)=> 
-        <ListGroup.Item>{skill}</ListGroup.Item>
-    );
     const renderSkills = () => {
         
     return (
