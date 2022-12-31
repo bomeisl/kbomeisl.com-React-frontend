@@ -31,8 +31,11 @@ const NavBar = () => {
                                     <p id="link"> My Projects </p> 
                                     </Link>
                                 </Nav.Link>
-                                <Nav.Link id="link" href="#pricing">My Musings (blog)</Nav.Link>
-                                <Nav.Link id="link" href="#pricing">How This Website Works</Nav.Link>
+                                <Nav.Link id="link" href="#features">
+                                    <Link id="link" to="/projects"> 
+                                    <p id="link"> My Musings (Blog) </p> 
+                                    </Link>
+                                </Nav.Link>                                
                                 </Stack>
                             </Nav>
                 
