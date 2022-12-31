@@ -25,7 +25,7 @@ const Projects = () => {
             },
             cardImage: {
               objectFit: 'cover',
-              padding: '7vw'
+              padding: '3vw'
               
             },
             cardGroup: {
