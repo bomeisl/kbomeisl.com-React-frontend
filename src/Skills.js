@@ -19,14 +19,14 @@ const Projects = () => {
 
         const styles = {
             card: {
-              backgroundColor: '#B7E0F2',
+              backgroundColor: 'lightgray',
               borderRadius: 55,
               padding: '3rem'
             },
             cardImage: {
               objectFit: 'cover',
               width: '30vw',
-            height: '30vh'
+                height: 'auto'
             }
           }
           
