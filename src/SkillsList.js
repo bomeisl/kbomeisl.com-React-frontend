@@ -2,14 +2,12 @@ import React from 'react'
 
 const SkillsList = (props) => {
 
+    const skillList = props.cluster.map((skill)=> 
+        <ListGroup.Item>{skill}</ListGroup.Item>
+    );
+
     return (
-        <div className="ui list">
-            {props.skills.map(skill => (
-                <div className="item" key={skill}>
-                    {skill}
-                </div>  
-            ))}
-        </div>
+        {skillList}
     )
 }
 
