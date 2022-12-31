@@ -3,6 +3,7 @@ import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import './Carousel.css'
 
 const responsive = {
     superLargeDesktop: {
@@ -47,13 +48,15 @@ const [index, setIndex] = useState(0);
     <Card style={{ width: '18rem' }}>
     <Card.Img variant="top" src={pic.image} />
     <Card.Body>
-      <Card.Title>{pic.header}</Card.Title>
-      <Card.Text>
-        {pic.sub}
+      <Card.Title id="pic-head">
+        <h3 id="pic-sub">{pic.header}</h3>
+      </Card.Title>
+      <Card.Text >
+        <p id="pic-sub">{pic.sub}</p>
       </Card.Text>
-      <Button variant="primary">"Github"</Button>
+      <Button id="card-butt" variant="primary">"Github"</Button>
     </Card.Body>
-  </Card>
+    </Card>
     
     );
 

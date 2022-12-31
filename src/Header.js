@@ -40,6 +40,8 @@ const Header = () => {
                                     Azure Blob Static Asset Storage Container that I created and configured. The backend and frontend are each hosted at 
                                     different domains, so I configured CORS to allow requests between them. Welcome to the world wide web of world wide
                                     web development! And welcome to the landing screen of my portfolio web app!
+                                    <br></br><br></br>
+                                    Hi
                                     
                                     </h6>
                                 </Stack>                                  
