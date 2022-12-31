@@ -16,6 +16,22 @@ const Projects = () => {
     }
 
     const renderCarousel = () => {
+
+        const styles = {
+            card: {
+              backgroundColor: '#B7E0F2',
+              borderRadius: 55,
+              padding: '3rem'
+            },
+            cardImage: {
+              objectFit: 'cover',
+              borderRadius: 55,
+              width: '50vw',
+            height: '30vh'
+            }
+          }
+          
+
         return(
             <div className="ui three stackable raised cards">
                 <div class="jumbotron m-3">
@@ -32,7 +48,7 @@ const Projects = () => {
                             <CardGroup>
 
                             <Card>
-                              <Card.Img src={project.icon} variant="top" />
+                              <Card.Img src={project.icon} variant="top" style={styles.cardImage} />
 
                               <Card.Body>
                                 <Card.Title>{project.category}</Card.Title>
