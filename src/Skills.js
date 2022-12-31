@@ -47,7 +47,7 @@ const Projects = () => {
                     } else {
                         return (
                             
-                            <Card>
+                            <Card style={styles.card}>
                               <Card.Img src={project.icon} variant="top" style={styles.cardImage} />
 
                               <Card.Body>
