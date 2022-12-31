@@ -17,6 +17,11 @@ const NavBar = () => {
                             <Nav class="start">
                                 <Stack direction='horizontal' gap={4}>
                                 <Nav.Link id="link" href="#home">
+                                    <Link id="link" to="/"> 
+                                    <p id="link"> Home </p>
+                                    </Link>
+                                </Nav.Link>
+                                <Nav.Link id="link" href="#home">
                                     <Link id="link" to="/Skills"> 
                                     <p id="link"> About Me </p>
                                     </Link>

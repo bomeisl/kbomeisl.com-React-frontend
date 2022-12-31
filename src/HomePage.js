@@ -1,15 +1,16 @@
 import React from 'react';
+import './HomePage.css'
 
 const Home = () => {
 
 
     return (
         <div>
-        <div class="jumbotron m-3">
-                    <h1 id="head-home">Welcome!</h1>
-                    <h3 id="head-sub-home">Welcome to my Portfolio Web App</h3>
-                </div>
-        <h6 class="display 7" id="intro">
+            <div class="jumbotron m-3">
+                    <h1 id="head-home">Welcome to Kyle's Workshop!</h1>
+                    <h3 id="head-sub-home">A Portfolio App and so much more!</h3>
+            </div>
+            <h6 class="display 7" id="intro-home">
                                     Behind every great Web app is a great RESTful API with CRUD operations. This one is no exception of course.
                                     You are viewing a screen rendered by a React frontend I built that is consuming a 
                                     Django RESTful API backend with a PostgreSQL database that I lovingly designed and programmed as well. The static and media assets are served from a 
@@ -19,8 +20,8 @@ const Home = () => {
                                     <br></br><br></br>
                                     
                                     
-                                    </h6>
-                                    </div>
+            </h6>
+        </div>
     )
     
 }
