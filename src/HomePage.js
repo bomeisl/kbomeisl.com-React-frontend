@@ -4,6 +4,11 @@ const Home = () => {
 
 
     return (
+        <div>
+        <div class="jumbotron m-3">
+                    <h1 id="head-home">Welcome!</h1>
+                    <h3 id="head-sub-home">Welcome to my Portfolio Web App</h3>
+                </div>
         <h6 class="display 7" id="intro">
                                     Behind every great Web app is a great RESTful API with CRUD operations. This one is no exception of course.
                                     You are viewing a screen rendered by a React frontend I built that is consuming a 
@@ -15,6 +20,7 @@ const Home = () => {
                                     
                                     
                                     </h6>
+                                    </div>
     )
     
 }

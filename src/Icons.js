@@ -43,6 +43,11 @@ const Icons = () => {
                     }
                 })}
                 </Stack>
+
+useEffect(()=>{
+    fetchHeader()
+},[])
+
 }
 
 export default Icons;
