@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Card from 'react-bootstrap/Card';
-import { CardGroup } from 'react-bootstrap';
+import Nav from 'react-bootstrap/Nav';
 import './Skills.css'
 import projects from './ProjectApi';
 
@@ -15,36 +15,58 @@ const Skills = () => {
         setSkillInfo(response.data)
     }
 
-    
+   
         
-        <div>
-        <div class="jumbotron m-3">
-                    <h1 id="head-skill">About Me</h1>
-                    <h3 id="head-sub-skill">Software projects I've created</h3>
-                </div>
-        <CardGroup>
+        
+        
         {skillInfo.map(cluster => {
+
+            
+
 
             if(!cluster){
                 return <div>One moment please...</div>
 
             } else {
                 return (
+                    
+                <div>
+                    <div class="jumbotron m-3">
+                        <h1 id="head-skill">About Me</h1>
+                        <h3 id="head-sub-skill">Software projects I've created</h3>
+                    </div>
+                    
 
-             <Card style={{ width: '18rem' }}>
-                <Card.Header>{cluster.category}</Card.Header>
-                <Card.Img variant="top" src={cluster.icon} />
-                    {cluster.skills.map( skill => {
-                        <ListGroup.Item>{skill.language}</ListGroup.Item>
-                    })}
-            </Card>
+             <Card>
+                <Card.Header>
+                    <Nav variant="tabs" defaultActiveKey="#first">
+
+                    <Nav.Item>
+                        <Nav.Link href="#first">{cluster.category}</Nav.Link>
+                    </Nav.Item>
+                    
+                    </Nav>
+                </Card.Header>
+                <Card.Body>
+                    <Card.Title>Special title treatment</Card.Title>
+
+                    <ListGroup variant="flush">
+                        
+                        {cluster.skills.map(skill => 
+                            <ListGroup.Item>{skill.language}</ListGroup.Item>
+                        )}
+                                                
+                    </ListGroup>
+        
+                </Card.Body>
+                </Card>
+            </div>  
         )
             }
         })}
 
-        </CardGroup>
-        </div>  
-          
+        
+    
           useEffect(()=>{
             fetchSkills()
         },[])
