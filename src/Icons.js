@@ -14,7 +14,7 @@ const Icons = () => {
     };
 
 
-<Stack direction='horizontal' gap={6}>
+<Stack direction='horizontal' gap={8}>
                 {headerInfo.map(header => {
                     
                     if(!header){
@@ -26,7 +26,7 @@ const Icons = () => {
                             <div class="center">
             
                             
-                                <Figure>
+                                <Figure class="center">
                                     <Figure.Image
                                         width={'25%'}
                                         height={'auto'}
