@@ -79,12 +79,12 @@ const Header = () => {
                         
                         <Container>
                 
-                        <Navbar.Brand href="#home">Kyle's Workshop</Navbar.Brand>
+                        <Navbar.Brand id = "nav-logo" href="#home">Kyle's Workshop</Navbar.Brand>
                             <Nav className="me-auto">
-                                <Nav.Link href="#home">About Me</Nav.Link>
-                                <Nav.Link href="#features">My Projects</Nav.Link>
-                                <Nav.Link href="#pricing">Musings (blog)</Nav.Link>
-                                <Nav.Link href="#pricing">How This Website Works</Nav.Link>
+                                <Nav.Link id="link" href="#home">About Me</Nav.Link>
+                                <Nav.Link id="link" href="#features">My Projects</Nav.Link>
+                                <Nav.Link id="link" href="#pricing">My Musings (blog)</Nav.Link>
+                                <Nav.Link id="link" href="#pricing">How This Website Works</Nav.Link>
                             </Nav>
                 
                         </Container>
