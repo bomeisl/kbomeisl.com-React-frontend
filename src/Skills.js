@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import SkillsList from './SkillsList.js'
+import ListGroup from 'react-bootstrap/ListGroup';
 import Card from 'react-bootstrap/Card';
 import { CardGroup } from 'react-bootstrap';
 import './Skills.css'
