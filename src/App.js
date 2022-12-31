@@ -4,7 +4,7 @@ import Projects from './Projects.js';
 import Skills from './Skills.js';
 import Home from './HomePage.js'
 import NavBar from './NavBar.js'
-import Icons from './Icons.js'
+import Header from './Header.js'
 import Stack from 'react-bootstrap/Stack';
 
 import './App.css';
@@ -22,7 +22,7 @@ function App() {
       </h1>
       
         <NavBar/>
-        <Icons/>
+        <Header/>
     </Stack>
     <Routes>
       <Route path="/" element={<Home/>}/>
