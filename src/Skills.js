@@ -24,18 +24,21 @@ const Skills = () => {
                     <h3 id="head-sub-skill">Software projects I've created</h3>
                 </div>
         <CardGroup>
-        {skillInfo.map(skillCluster => {
-            if(!skillCluster){
+        {skillInfo.map(cluster => {
+
+            const skillList = cluster.skills.map((skill)=> 
+                <ListGroup.Item>{skill.language}</ListGroup.Item>
+            );
+
+            if(!cluster){
                 return <div>One moment please...</div>
 
             } else {
 
              <Card style={{ width: '18rem' }}>
-                <Card.Header>{skillCluster.category}</Card.Header>
-                <Card.Img variant="top" src={skillCluster.icon} />
-                    <SkillsList
-                        cluster = {skillCluster.skills}
-                    />
+                <Card.Header>{cluster.category}</Card.Header>
+                <Card.Img variant="top" src={cluster.icon} />
+                    {skillList}
             </Card>
             }
         })}
