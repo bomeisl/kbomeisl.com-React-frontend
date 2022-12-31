@@ -26,10 +26,6 @@ const Skills = () => {
         <CardGroup>
         {skillInfo.map(cluster => {
 
-            const skillList = cluster.skills.map((skill)=> 
-                <ListGroup.Item>{skill.language}</ListGroup.Item>
-            );
-
             if(!cluster){
                 return <div>One moment please...</div>
 
@@ -38,7 +34,9 @@ const Skills = () => {
              <Card style={{ width: '18rem' }}>
                 <Card.Header>{cluster.category}</Card.Header>
                 <Card.Img variant="top" src={cluster.icon} />
-                    {skillList}
+                    {cluster.skills.map( skill => {
+                        <ListGroup.Item>{skill.language}</ListGroup.Item>
+                    })}
             </Card>
             }
         })}
