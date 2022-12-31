@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom'
 import Projects from './Projects.js';
 import Skills from './Skills.js';
-import Header from './Header.js'
+import Home from './HomePage.js'
 import NavBar from './NavBar.js'
 import Icons from './Icons.js'
 import Stack from 'react-bootstrap/Stack';
@@ -25,7 +25,7 @@ function App() {
         <Icons/>
     </Stack>
     <Routes>
-      <Route path="/" element={<Header/>}/>
+      <Route path="/" element={<Home/>}/>
       <Route path="/projects" element={<Projects/>}/>
       <Route path="/skills" element={<Skills/>}/>
     </Routes>
