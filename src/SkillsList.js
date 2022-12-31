@@ -8,7 +8,7 @@ const SkillsList = (props) => {
     );
 
     return (
-        {skillList}
+        skillList
     )
 }
 
