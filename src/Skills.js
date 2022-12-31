@@ -15,9 +15,8 @@ const Skills = () => {
         setSkillInfo(response.data)
     }
 
-    const renderSkills = () => {
+    
         
-    return (
         <div>
         <div class="jumbotron m-3">
                     <h1 id="head-skill">About Me</h1>
@@ -30,6 +29,7 @@ const Skills = () => {
                 return <div>One moment please...</div>
 
             } else {
+                return (
 
              <Card style={{ width: '18rem' }}>
                 <Card.Header>{cluster.category}</Card.Header>
@@ -38,27 +38,22 @@ const Skills = () => {
                         <ListGroup.Item>{skill.language}</ListGroup.Item>
                     })}
             </Card>
+        )
             }
         })}
 
         </CardGroup>
-        </div>    
-    )
+        </div>  
+          
+          useEffect(()=>{
+            fetchSkills()
+        },[])
+   
+
     }
 
-    useEffect(()=>{
-        fetchSkills()
-    },[])
+   
+    
 
-    return (
-        <>
-            <div>
-                
-                {renderSkills()}
-            </div>
-                
-        </>
-    )
-}
 
 export default Skills;
