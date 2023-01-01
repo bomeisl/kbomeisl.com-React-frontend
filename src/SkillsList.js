@@ -1,10 +1,13 @@
 import React from 'react'
 import ListGroup from 'react-bootstrap/ListGroup';
+import './Skills.css'
 
 const SkillsList = (props) => {
 
     const skillList = props.cluster.map(skill=> 
-        <ListGroup.Item>{skill.language}</ListGroup.Item>
+        <ListGroup.Item>
+            <h3 id="lang">{skill.language}</h3>
+        </ListGroup.Item>
     );
 
     return (
