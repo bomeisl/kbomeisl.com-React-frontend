@@ -1,8 +1,11 @@
 import React from 'react';
 import 'react-multi-carousel/lib/styles.css';
 import './ProjectsCard.css'
+import Button from 'react-bootstrap/Button';
 
 const ProjectCard = (props) => {
+
+    
 
 
     return (
@@ -17,12 +20,11 @@ const ProjectCard = (props) => {
                 
                
                 
-            </div>
-            <div class="center" className="extra center content">
-                <button class="center" className="ui center button">
-                    <p id="button-text">{props.github}</p>
-                </button>
-            
+                <div className="d-grid gap-2">
+                    <Button href={props.github} variant="secondary" size="lg">
+                        {props.github}
+                    </Button>
+                </div>
             </div>
         </div>
     )
