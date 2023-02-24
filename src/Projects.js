@@ -15,6 +15,7 @@ const Projects = () => {
         const response = await projects.get('/projects/')
         setProjectInfo(response.data)
     }
+    
 
 
 
@@ -35,8 +36,8 @@ const Projects = () => {
                     <Stack direction='vertical' gap={3}>
                     <Card border="primary" style={{ width: '100%' }}>
                         <ProjectCard
-                            key = {project.name}
-                            name = {project.name}
+                            key = {project.title}
+                            name = {project.title}
                             description = {project.description}
                             github = {project.github}
                             demo = {project.demo}
