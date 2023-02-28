@@ -22,6 +22,10 @@ const Projects = () => {
 
 
     const renderCarousel = () => {
+        if(!done){
+            return <div>One moment please...</div>
+
+        } else {
         return(
             <div className="ui three stackable raised cards">
                 <div class="jumbotron m-3">
@@ -29,11 +33,6 @@ const Projects = () => {
                     <h3 id="head-sub"></h3>
                 </div>
                 {projectInfo.map(project => {
-
-                    if(!done){
-                        return <div>One moment please...</div>
-
-                    } else {
                         return (
                     <Stack direction='vertical' gap={3}>
                     <Card border="primary" style={{ width: '100%' }}>
@@ -58,11 +57,15 @@ const Projects = () => {
                                 
                         )
                     }
-                })}
+                )
+        }
+                
 
             </div>
         )
     }
+}
+
 
     useEffect(()=>{
         fetchProjects()
