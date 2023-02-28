@@ -10,10 +10,12 @@ import './Carousel.css'
 
 const Projects = () => {
     const [projectInfo,setProjectInfo] = useState([]);
+    const [done, setDone] = useState(undefined);
 
     const fetchProjects = async () =>{
         const response = await projects.get('/projects/')
         setProjectInfo(response.data)
+        setDone(true)
     }
     
 
@@ -28,7 +30,7 @@ const Projects = () => {
                 </div>
                 {projectInfo.map(project => {
 
-                    if(!project){
+                    if(!done){
                         return <div>One moment please...</div>
 
                     } else {
