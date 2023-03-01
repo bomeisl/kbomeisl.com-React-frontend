@@ -23,7 +23,10 @@ const Projects = () => {
 
     const renderCarousel = () => {
         if(!done){
-            return <div>One moment please...</div>
+            <Loading
+                type = "balls"
+                color = "#ffffff"
+            />
 
         } else {
         return(
