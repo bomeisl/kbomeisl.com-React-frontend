@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import projects from './ProjectApi';
+import ReactLoading from "react-loading";
 import 'react-multi-carousel/lib/styles.css';
 import UncontrolledExample from './Carousel';
 import ProjectCard from './ProjectsCard';
@@ -17,14 +18,31 @@ const Projects = () => {
         setProjectInfo(response.data)
         setDone(true)
     }
-    
-
 
 
     const renderCarousel = () => {
         if(!done){
-           
-            <Loading/>
+           return(
+            
+            <div className="ui three stackable raised cards">
+                <div class="jumbotron m-3">
+                    <h1 id="head">Projects</h1>
+                    <h3 id="head-sub"></h3>
+                </div >
+                <section>
+                <div style={{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+}}>
+                    <h1 id="loading-text"> Loading Projects from Django REST API </h1>
+                        
+                        <ReactLoading type = {'bars'} color = {'darkslateblue'} height = {100} width = {100}  />
+                        </div>
+                </section>
+              
+                </div>
+           )
 
         } else {
         return(
